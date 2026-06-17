@@ -1,210 +1,193 @@
-# TechEx AI Command Center
+# PulseIQ
 
-Enterprise-grade multi-agent AI orchestration platform designed for intelligent workflow automation, analytics, and strategic decision support.
+AI-powered enterprise workflow platform that enables departments to collaborate through a multi-agent system.
+
+PulseIQ transforms a simple request into a coordinated workflow involving multiple departments, approvals, and AI agents.
+
+Built for the Band of Agents Hackathon.
 
 ---
 
-## Overview
+## Problem
 
-TechEx AI Command Center simulates an enterprise AI workforce where specialized AI agents collaborate to process business tasks, analyze operational data, generate strategic insights, and produce executive-level reports.
+Organizations frequently struggle with cross-department coordination.
 
-The platform demonstrates:
-- Multi-agent coordination
-- Workflow orchestration
-- AI-generated executive reporting
-- Enterprise analytics dashboards
-- Real-time workflow visualization
-- Agent communication simulation
-- Strategic decision support systems
+Requests often become fragmented across teams, leading to:
+
+- Communication gaps
+- Approval bottlenecks
+- Lack of ownership
+- Delayed execution
+- Poor visibility across departments
+
+PulseIQ centralizes these interactions into a single AI-powered workflow system.
+
+---
+
+## Solution
+
+PulseIQ accepts a business request and orchestrates multiple AI agents to coordinate work between departments.
+
+The system:
+
+1. Understands incoming requests
+2. Identifies involved departments
+3. Coordinates actions between teams
+4. Tracks workflow progress
+5. Generates executive reports
+
+---
+
+## AI Agents
+
+### Intake Agent
+
+Analyzes requests and extracts requirements.
+
+### Routing Agent
+
+Identifies departments and assigns tasks.
+
+### Coordination Agent
+
+Manages inter-department communication.
+
+### Decision Agent
+
+Compiles approvals and final outcomes.
+
+---
+
+## Departments
+
+- Human Resources (HR)
+- Finance
+- Procurement
+- Operations
 
 ---
 
 ## Features
 
-### Multi-Agent AI Workforce
-- Coordinator Agent
-- Analytics Agent
-- Finance Agent
-- Operations Agent
-- Research Agent
+- Multi-agent enterprise workflow system
+- Cross-department coordination
+- Real-time workflow visualization
+- Department status monitoring
+- Executive report generation
+- AI-powered decision support
+- Responsive enterprise dashboard
 
-### Workflow Orchestration
-- Dynamic workflow timeline
-- Live execution states
-- Dependency graph visualization
-- Recent workflow tracking
+---
 
-### Executive Reporting
-- AI-generated enterprise reports
-- Real-time typing animation
-- Markdown rendering
-- Export report functionality
+## Example Requests
 
-### Analytics Dashboard
-- KPI visualization
-- Operational intelligence metrics
-- Revenue and workflow analytics
-- Demo analytics environment
+### Employee Onboarding
 
-### Enterprise UI/UX
-- Modern enterprise dashboard
-- Responsive layout
-- Interactive navigation
-- Loading overlays and animations
+```
+Need approval to purchase 15 laptops for new employees.
+```
+
+### Budget Approval
+
+```
+Approve AI software subscriptions for the Data Science team.
+```
+
+### Procurement Request
+
+```
+Purchase office equipment for 20 new interns.
+```
+
+### Operations Escalation
+
+```
+Vendor delivery delays are affecting business operations.
+```
 
 ---
 
 ## Tech Stack
 
 ### Frontend
-- React.js
+
+- React
 - Vite
-- CSS3
-- React Markdown
-- Recharts
+- CSS
 
-### Backend
-- Flask
-- Flask-CORS
-- Python
+### AI
 
-### AI Integration
 - Groq API
-- Multi-agent orchestration architecture
+
+### Deployment
+
+- Vercel
+
+### Collaboration Layer
+
+- Band (Hackathon Integration)
 
 ---
 
 ## Project Structure
 
-```bash
-TechEx-AI-Command-Center/
+```
+frontend/
 │
-├── backend/
-│   ├── agents/
-│   ├── routes/
+├── src/
+│   ├── components/
 │   ├── services/
-│   ├── app.py
-│   └── requirements.txt
+│   ├── App.jsx
+│   ├── App.css
+│   └── main.jsx
 │
-├── frontend/
-│   ├── public/
-│   ├── src/
-│   ├── package.json
-│   └── vite.config.js
-│
-├── screenshots/
-├── .env
-├── .gitignore
-└── README.md
+├── package.json
+└── .env
 ```
 
 ---
 
-## Installation & Setup
+## Local Setup
 
-### Clone Repository
+Clone the repository:
 
 ```bash
-git clone <your-repository-url>
-cd TechEx-AI-Command-Center
+git clone https://github.com/YOUR_USERNAME/PulseIQ.git
 ```
 
----
-
-## Backend Setup
+Install dependencies:
 
 ```bash
-cd backend
-
-python -m venv venv
-
-venv\Scripts\activate
-
-pip install -r requirements.txt
-
-python app.py
-```
-
-Backend runs on:
-```bash
-http://127.0.0.1:5000
-```
-
----
-
-## Frontend Setup
-
-```bash
-cd frontend
-
 npm install
+```
 
+Create a .env file:
+
+```env
+VITE_GROQ_API_KEY=your_api_key_here
+```
+
+Run locally:
+
+```bash
 npm run dev
 ```
 
-Frontend runs on:
-```bash
-http://localhost:5173
-```
+---
+
+## Future Improvements
+
+- Real Band agent-to-agent communication
+- Workflow history persistence
+- Authentication
+- Department analytics dashboard
+- Approval audit trails
+- Notification system
 
 ---
 
-## Environment Variables
+## Team
 
-Create a `.env` file in the root directory:
+Band of Agents Hackathon Submission
 
-```env
-GROQ_API_KEY=your_api_key_here
-```
-
----
-
-## Screenshots
-
-### Dashboard
-![Dashboard](screenshots/Dashboard.png)
-
-### Workflow Management
-![Workflows](screenshots/Workflows.png)
-
-### Analytics Dashboard
-![Analytics](screenshots/Analytics.png)
-
-### AI Agents
-![Agents](screenshots/Agents.png)
-
-### Executive Report Generation
-![Executive Report](screenshots/ExecutiveReport.png)
-
-### Platform Settings
-![Settings](screenshots/Settings.png)
-
-### Workflow Execution
-![Running](screenshots/Running.png)
----
-
-## Demo Disclaimer
-
-This project simulates enterprise workflow analytics and AI orchestration for demonstration and hackathon purposes.
-
-Analytics, workflow metrics, and reports shown inside the dashboard are demo-generated and do not represent real enterprise data.
-
----
-
-## Future Enhancements
-
-- Real-time database integration
-- Persistent workflow history
-- User authentication
-- Live collaboration system
-- PDF report export
-- Real enterprise analytics integration
-- WebSocket live updates
-- Docker deployment
-- Cloud-native orchestration
-
----
-
-## Author
-
-Developed as a hackathon-ready enterprise AI automation platform project.
+PulseIQ - Enterprise AI Workflow Platform
